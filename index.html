@@ -1152,80 +1152,56 @@ section{position:relative;}
 }
 
 /* ============ SPECIFICATIONS TABLE — THE MAYBACH COLLECTION 하단 (Ivory) ============ */
-/* ============ S 580 vs S 680 옵션 비교 (mo-) — Quiet Luxury ============ */
-.mo{margin:clamp(44px,5vw,72px) auto 0;max-width:1100px;}
+/* ============ 마이바흐 기본옵션 (mo-) — STANDARD EQUIPMENT ============ */
+.mo-sec{background:#F5F2EC;color:#151515;}
+.mo{max-width:1000px;margin:0 auto;}
 .mo-head{text-align:center;}
 .mo-eyebrow{display:block;font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:#B49A6A;}
-.mo-title{margin-top:10px;font-family:var(--sans);font-weight:600;font-size:clamp(26px,3vw,38px);letter-spacing:0.02em;color:#151515;}
-.mo-kr{margin-top:6px;font-size:16px;font-weight:600;color:#151515;}
-.mo-desc{margin-top:6px;font-size:14.5px;color:var(--text-sub);word-break:keep-all;}
-.mo-prices{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:stretch;gap:12px;margin-top:24px;}
-.mo-price{padding:18px 20px;background:#FBF9F5;border:1px solid var(--line);min-width:0;}
-.mo-price-model{font-size:12px;font-weight:700;letter-spacing:0.14em;color:var(--text-sub);}
-.mo-price-val{margin-top:6px;font-size:clamp(20px,2vw,26px);font-weight:700;color:#151515;letter-spacing:0.01em;}
-.mo-price-txt{margin-top:8px;font-size:13.5px;line-height:1.65;color:var(--text-sub);word-break:keep-all;}
-.mo-gap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0 6px;text-align:center;}
-.mo-gap-k{font-size:12px;font-weight:600;color:var(--text-sub);}
-.mo-gap-v{padding:6px 12px;background:#151515;color:#fff;font-size:14px;font-weight:700;white-space:nowrap;box-shadow:inset 0 2px 0 #B49A6A;}
-.mo-gap-sub{font-size:11.5px;color:var(--text-sub);}
-.mo-filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:22px;}
-.mo-filter{position:relative;min-height:42px;padding:9px 18px;background:#F5F2EC;color:#151515;border:1px solid var(--line);font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;word-break:keep-all;}
-.mo-filter:hover{border-color:#B49A6A;}
-.mo-filter:focus-visible{outline:2px solid #B49A6A;outline-offset:2px;}
-.mo-filter[aria-pressed="true"]{background:#151515;color:#fff;border-color:#151515;}
-.mo-filter[aria-pressed="true"]::before{content:'';position:absolute;left:-1px;right:-1px;top:-1px;height:2px;background:#B49A6A;}
-.mo-table{margin-top:16px;border:1px solid var(--line);background:#FBF9F5;}
-.mo-row{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line);}
-.mo-row:first-child{border-top:none;}
-.mo-row[hidden]{display:none;}
-.mo-row > div{padding:14px 18px;min-width:0;}
-.mo-row.is-head > div{padding:12px 18px;font-size:12px;font-weight:700;letter-spacing:0.12em;color:var(--text-sub);}
-.mo-label{font-size:14.5px;font-weight:700;color:#151515;word-break:keep-all;}
-.mo-row.is-key .mo-label::before{content:'';display:inline-block;width:6px;height:6px;margin:0 8px 2px 0;background:#B49A6A;vertical-align:middle;}
-.mo-ldesc{margin-top:4px;font-size:12.5px;line-height:1.6;color:var(--text-sub);word-break:keep-all;}
-.mo-val{font-size:14.5px;line-height:1.55;color:#151515;word-break:keep-all;}
-.mo-code{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:600;letter-spacing:0.04em;color:#8C7650;white-space:nowrap;}
-.mo-st{display:inline-block;margin-top:6px;padding:2px 8px;font-size:11.5px;font-weight:700;letter-spacing:0.02em;border:1px solid var(--line);color:var(--text-sub);}
-.mo-st.std{border-color:#B49A6A;color:#8C7650;}
-.mo-st.alt{border-color:#151515;color:#151515;}
-.mo-st.none{border-style:dashed;}
-.mo-val.is-none{color:var(--text-sub);}
-.mo-cnote{display:block;margin-top:4px;font-size:12px;color:var(--text-sub);}
-.mo-pkg-btn{display:inline-block;margin-top:8px;padding:4px 10px;background:none;border:1px solid var(--line);font-family:var(--sans);font-size:12px;font-weight:600;color:#151515;cursor:pointer;}
-.mo-pkg-btn:hover{border-color:#B49A6A;}
-.mo-pkg-btn:focus-visible{outline:2px solid #B49A6A;outline-offset:2px;}
-.mo-pkg{margin:8px 0 0;padding:10px 12px;list-style:none;background:#fff;border:1px solid var(--line);}
-.mo-pkg[hidden]{display:none;}
-.mo-pkg li{font-size:13px;line-height:1.7;color:#151515;word-break:keep-all;}
-.mo-cards{display:none;}
-.mo-common-btn{display:block;margin:18px auto 0;min-height:46px;padding:10px 22px;background:none;border:1px solid #151515;color:#151515;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;}
-.mo-common-btn:hover{border-color:#B49A6A;color:#8C7650;}
-.mo-common-btn:focus-visible{outline:2px solid #B49A6A;outline-offset:2px;}
-.mo-common-btn[aria-expanded="true"]{background:#151515;color:#fff;}
-.mo-common{margin-top:14px;padding:18px 20px;background:#FBF9F5;border:1px solid var(--line);}
-.mo-common[hidden]{display:none;}
-.mo-common-h{font-size:12px;font-weight:700;letter-spacing:0.12em;color:#8C7650;}
-.mo-common ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px;margin:10px 0 0;padding:0;list-style:none;}
-.mo-common li{font-size:14px;line-height:1.6;color:#151515;word-break:keep-all;padding-left:12px;position:relative;}
-.mo-common li::before{content:'';position:absolute;left:0;top:0.7em;width:4px;height:4px;background:#B49A6A;}
+.mo-title{margin-top:10px;font-family:var(--sans);font-weight:600;font-size:clamp(28px,3.4vw,44px);line-height:1.25;color:#151515;word-break:keep-all;}
+.mo-desc{margin-top:8px;font-size:15px;color:var(--text-sub);word-break:keep-all;}
+.mo-models{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:520px;margin:28px auto 0;}
+.mo-model{position:relative;min-height:56px;padding:12px;background:#FBF9F5;color:#151515;border:1px solid var(--line);font-family:var(--sans);font-size:17px;font-weight:700;letter-spacing:0.04em;cursor:pointer;}
+.mo-model:hover{border-color:#B49A6A;}
+.mo-model:focus-visible{outline:2px solid #B49A6A;outline-offset:2px;}
+.mo-model[aria-pressed="true"]{background:#151515;color:#fff;border-color:#151515;}
+.mo-model[aria-pressed="true"]::before{content:'';position:absolute;left:-1px;right:-1px;top:-1px;height:2px;background:#B49A6A;}
+.mo-cats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:14px;}
+.mo-cat{min-height:46px;padding:10px 8px;background:none;border:1px solid var(--line);color:var(--text-sub);font-family:var(--sans);font-size:14.5px;font-weight:600;cursor:pointer;word-break:keep-all;}
+.mo-cat:hover{border-color:#B49A6A;color:#151515;}
+.mo-cat:focus-visible{outline:2px solid #B49A6A;outline-offset:2px;}
+.mo-cat[aria-pressed="true"]{border-color:#151515;color:#151515;box-shadow:inset 0 -2px 0 #B49A6A;background:#FBF9F5;}
+.mo-list{margin-top:16px;background:#FBF9F5;border:1px solid var(--line);}
+.mo-list-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding:16px 20px;border-bottom:1px solid var(--line);}
+.mo-list-t{font-size:16px;font-weight:700;color:#151515;}
+.mo-list-c{font-size:12.5px;color:var(--text-sub);}
+.mo-items{margin:0;padding:6px 20px 10px;list-style:none;columns:2;column-gap:36px;}
+.mo-items > li{break-inside:avoid;padding:9px 0 9px 14px;position:relative;font-size:14.5px;line-height:1.55;color:#151515;word-break:keep-all;border-bottom:1px solid rgba(21,21,21,0.06);}
+.mo-items > li::before{content:'';position:absolute;left:0;top:1.05em;width:4px;height:4px;background:#B49A6A;}
+.mo-groups{margin:0;padding:0;list-style:none;}
+.mo-group{border-top:1px solid var(--line);}
+.mo-group:first-child{border-top:none;}
+.mo-gbtn{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:56px;padding:14px 20px;background:none;border:none;color:#151515;font-family:var(--sans);font-size:15px;font-weight:700;text-align:left;cursor:pointer;word-break:keep-all;}
+.mo-gbtn:hover{background:#fff;}
+.mo-gbtn:focus-visible{outline:2px solid #B49A6A;outline-offset:-2px;}
+.mo-gcount{margin-left:8px;font-size:12.5px;font-weight:600;color:var(--text-sub);}
+.mo-gicon{flex:none;position:relative;width:14px;height:14px;}
+.mo-gicon::before,.mo-gicon::after{content:'';position:absolute;left:0;top:6px;width:14px;height:2px;background:#B49A6A;transition:transform .2s ease;}
+.mo-gicon::after{transform:rotate(90deg);}
+.mo-gbtn[aria-expanded="true"] .mo-gicon::after{transform:rotate(0deg);}
+.mo-gbtn[aria-expanded="true"]{background:#fff;}
+.mo-gbody{padding:0 0 8px;background:#fff;}
+.mo-gbody[hidden]{display:none;}
+.mo-gbody .mo-items{padding-top:0;}
+.mo-sub{margin-top:4px;font-size:13px;line-height:1.6;color:var(--text-sub);}
 .mo-note{margin-top:12px;font-size:12px;line-height:1.7;color:var(--text-sub);word-break:keep-all;}
-.mo-note[hidden]{display:none;}
 @media(max-width:760px){
-  .mo-prices{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
-  .mo-gap{grid-column:1 / -1;grid-row:1;flex-direction:row;flex-wrap:wrap;padding:0;}
-  .mo-price{padding:14px 12px;}
-  .mo-price-val{font-size:clamp(16px,4.6vw,20px);white-space:nowrap;}
-  .mo-filters{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
-  .mo-filters::-webkit-scrollbar{display:none;}
-  .mo-filter{flex:0 0 auto;}
-  .mo-table{display:none;}
-  .mo-cards{display:grid;gap:10px;margin-top:14px;}
-  .mo-card{padding:16px;background:#FBF9F5;border:1px solid var(--line);}
-  .mo-card[hidden]{display:none;}
-  .mo-card.is-key{border-top:2px solid #B49A6A;}
-  .mo-card-m{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);}
-  .mo-card-k{font-size:12px;font-weight:700;letter-spacing:0.1em;color:var(--text-sub);padding-top:2px;}
-  .mo-common ul{grid-template-columns:1fr;}
+  .mo-models{max-width:none;}
+  .mo-cats{display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
+  .mo-cats::-webkit-scrollbar{display:none;}
+  .mo-cat{flex:0 0 auto;padding:10px 16px;font-size:14px;}
+  .mo-items{columns:1;padding:4px 16px 8px;}
+  .mo-list-h{padding:14px 16px;}
+  .mo-gbtn{padding:14px 16px;font-size:14.5px;}
 }
 .ms-spec{margin:clamp(40px,4.6vw,64px) auto 0;max-width:1100px;}
 .ms-spec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding-bottom:14px;}
@@ -1424,25 +1400,6 @@ body,button,input,select,textarea{font-family:var(--font-main);}
         <span class="mb-showcase-price" id="msPrice"></span>
         <span class="mb-showcase-price-note" id="msPriceNote">차량 기준 가격 &middot; VAT 포함 &middot; OTR 제외</span>
         <p class="mb-showcase-desc" id="msDesc"></p>
-      </div>
-
-      <!-- S 580 vs S 680 옵션 비교 — 메르세데스-벤츠 코리아 차량 구성표(2026.10.23 작성) 기본 사양 기준
-           데이터: MAYBACH_OPTION_COMPARE · 가격: MAYBACH_MODEL_BASE_PRICES · 페이지 공통 모델 선택에는 영향 없음 -->
-      <div class="mo" id="maybachOptions">
-        <div class="mo-head">
-          <span class="mo-eyebrow">Model &amp; Option Comparison</span>
-          <h3 class="mo-title">S 580 vs S 680</h3>
-          <p class="mo-kr">두 모델, 서로 다른 가치</p>
-          <p class="mo-desc">Mercedes&#8211;Maybach S 580과 S 680의 주요 사양 차이를 비교해 보세요.</p>
-        </div>
-        <div class="mo-prices" id="moPrices"></div>
-        <div class="mo-filters" id="moFilters" role="group" aria-label="옵션 비교 카테고리"></div>
-        <div class="mo-table" id="moTable" role="table" aria-label="S 580과 S 680 옵션 비교"></div>
-        <div class="mo-cards" id="moCards"></div>
-        <button type="button" class="mo-common-btn" id="moCommonBtn" aria-expanded="false" aria-controls="moCommon">두 모델의 공통 기본사양 보기 <span aria-hidden="true">+</span></button>
-        <div class="mo-common" id="moCommon" hidden></div>
-        <p class="mo-note">&#8251; 메르세데스&#8211;벤츠 코리아 차량 구성표(2026. 10. 23. 작성)의 기본 사양 기준입니다. &lsquo;구성표에 기재 없음&rsquo;은 해당 구성표에 표기되지 않았다는 뜻이며, 선택 가능 여부를 의미하지 않습니다. 세부 사양은 추가 확인이 필요합니다.</p>
-        <p class="mo-note" id="moMfNote" hidden>&#8251; 이 비교표는 S 580과 S 680의 공식 구성표 기준입니다. S 580 MANUFAKTUR의 차별화 사양은 MANUFAKTUR EXPERIENCE에서 확인할 수 있습니다.</p>
       </div>
 
       <!-- 상세 제원 비교표 — 기존 SPECIFICATIONS에서 이동 (수치 변경 없음 · 가격 행 제외: 기준가격은 위 #msPrice에서 표시) -->
@@ -1721,6 +1678,25 @@ body,button,input,select,textarea{font-family:var(--font-main);}
   <div class="silence-break reveal">
     <span class="tiny">Silence</span>
     <h3>The ultimate luxury.</h3>
+  </div>
+</section>
+
+<!-- ============ 06-B 마이바흐 기본옵션 (STANDARD EQUIPMENT) — COMFORT 챕터에 포함 ============
+     데이터: MAYBACH_STANDARD_EQUIPMENT (메르세데스-벤츠 코리아 차량 구성표 2026.10.23 '기본 가격에 포함됨' 기준)
+     모델 선택은 이 섹션 전용 조회 기능 — 페이지 공통 모델(maybachSelectedModel)·maybach:modelchange와 무관 -->
+<section class="mo-sec section-pad" id="standardEquipment">
+  <div class="wrap">
+    <div class="mo" id="maybachOptions">
+      <div class="mo-head">
+        <span class="mo-eyebrow">Standard Equipment</span>
+        <h2 class="mo-title">마이바흐 기본옵션</h2>
+        <p class="mo-desc">모델을 선택하고 기본 적용 사양을 확인하세요.</p>
+      </div>
+      <div class="mo-models" id="moModels" role="group" aria-label="모델 선택"></div>
+      <div class="mo-cats" id="moCats" role="group" aria-label="카테고리 선택"></div>
+      <div class="mo-list" id="moList" aria-live="polite"></div>
+      <p class="mo-note">&#8251; 메르세데스&#8211;벤츠 코리아 차량 구성표(2026. 10. 23. 작성)의 &lsquo;기본 가격에 포함됨&rsquo; 항목 기준입니다. 구성표에 기재되지 않은 항목은 선택 가능 여부를 의미하지 않으며, 세부 사양은 추가 확인이 필요합니다. S 580 MANUFAKTUR의 차별화 사양은 MANUFAKTUR EXPERIENCE에서 확인할 수 있습니다.</p>
+    </div>
   </div>
 </section>
 
@@ -4924,130 +4900,116 @@ const VIDEO_URLS = {
   document.addEventListener('maybach:modelchange', function(e){ syncCollectionSpec(e.detail && e.detail.id); });
 
   /* ==================================================
-     S 580 vs S 680 옵션 비교 (THE MAYBACH COLLECTION 내부)
-     ▸ 근거: 메르세데스-벤츠 코리아 차량 구성표(2026. 10. 23. 작성) S 580 · S 680 '기본 가격에 포함됨' 항목 — 옵션 코드는 구성표 원문 값만 사용
-     ▸ state: std = 기본 포함 · alt = 다른 기본 구성 · none = 해당 PDF 구성표에 기재 없음 · check = 추가 확인 필요
-     ▸ 가격은 MAYBACH_MODEL_BASE_PRICES 재사용 · 페이지 공통 모델(maybachSelectedModel)은 읽기만 함
+     마이바흐 기본옵션 (STANDARD EQUIPMENT · COMFORT 챕터 #standardEquipment)
+     ▸ 근거: 메르세데스-벤츠 코리아 차량 구성표(2026. 10. 23. 작성) S 580 · S 680 '기본 가격에 포함됨' 항목
+     ▸ 화면에는 기능 이름만 표시 (SA-/PC-/PS-/GC- 코드 미표시) · 구성표에 없는 장비는 추가하지 않음
+     ▸ 제외: 운송 보호용 패키지 · 트랜스포트 프로텍션(물류 보호) · 구급상자 삭제 · 공기 청정 패키지 전기 필터 제외(삭제 사양 표기)
+     ▸ 항목: 문자열 = 단일 사양 · { title, items } = 펼쳐보는 패키지/그룹
      ================================================== */
   const MAYBACH_OPTION_CATEGORIES = [
-    { id:"all", label:"전체 차이" }, { id:"drive", label:"주행기술" }, { id:"exterior", label:"외관" }, { id:"interior", label:"실내" }, { id:"security", label:"보안" }
+    { id:"powertrain", label:"파워트레인" },
+    { id:"exterior", label:"외관디자인" },
+    { id:"interior", label:"인테리어" },
+    { id:"safety", label:"안전사양" },
+    { id:"convenience", label:"편의사양" }
   ];
-  const MAYBACH_OPTION_COMPARE = [
-    { id:"engine", category:"drive", label:"엔진", optionCode:"", key:true, status:"diff",
-      s580:{ text:"V8", state:"alt" }, s680:{ text:"V12", state:"alt" }, description:"" },
-    { id:"displacement", category:"drive", label:"배기량", optionCode:"", status:"diff",
-      s580:{ text:"3,982cc", state:"alt" }, s680:{ text:"5,980cc", state:"alt" }, description:"" },
-    { id:"suspension", category:"drive", label:"서스펜션", optionCode:"", key:true, status:"diff",
-      s580:{ text:"E-액티브 바디 컨트롤", code:"SA-490", state:"alt" }, s680:{ text:"에어매틱", code:"SA-489", state:"alt" },
-      description:"두 모델이 서로 다른 서스펜션을 기본 구성으로 갖습니다." },
-    { id:"ras", category:"drive", label:"리어 액슬 스티어링", optionCode:"", status:"diff",
-      s580:{ text:"리어 액슬 스티어링 (10°)", code:"SA-216", state:"alt" },
-      s680:{ text:"리어 액슬 스티어링", code:"SA-201", state:"alt", note:"구성표에 조향 각도 표기 없음" }, description:"" },
-    { id:"hybrid", category:"drive", label:"EQ 부스트 · 통합 스타터 제너레이터", optionCode:"", status:"diff",
-      s580:{ text:"EQ 부스트 · 통합 스타터 제너레이터", code:"SA-B01 · SA-94B", state:"std" }, s680:{ text:"해당 PDF 구성표에 기재 없음", state:"none" }, description:"" },
-    { id:"wheel", category:"exterior", label:"기본 휠", optionCode:"", key:true, status:"diff",
-      s580:{ text:"20인치 MAYBACH 5홀 단조 휠", code:"SA-R61", state:"alt" }, s680:{ text:"21인치 마이바흐 멀티 스포크 단조 휠", code:"SA-70R", state:"alt" }, description:"" },
-    { id:"trim", category:"interior", label:"실내 트림", optionCode:"", key:true, status:"diff",
-      s580:{ text:"MANUFAKTUR 플로잉 라인 피아노 라커 트림, 블랙", code:"SA-H17", state:"alt" },
-      s680:{ text:"MANUFAKTUR 브라운 오픈 포어 월넛 우드와 알루미늄 라인 트림", code:"SA-H38", state:"alt" }, description:"" },
-    { id:"steering", category:"interior", label:"스티어링 휠", optionCode:"", status:"diff",
-      s580:{ text:"다기능 스티어링 휠, 나파 가죽", code:"SA-L2B", state:"alt" }, s680:{ text:"다기능 스티어링 휠, 우드/가죽", code:"SA-L2D", state:"alt" }, description:"" },
-    { id:"roof", category:"interior", label:"루프 라이너", optionCode:"", status:"diff",
-      s580:{ text:"마이크로컷 루프 라이너, 블랙", code:"SA-61U", state:"alt" }, s680:{ text:"MANUFAKTUR 나파 가죽 루프 라이너, 블랙", code:"SA-71U", state:"alt", note:"MANUFAKTUR 가죽 패키지 구성" }, description:"" },
-    { id:"leatherPkg", category:"interior", label:"MANUFAKTUR 가죽 패키지", optionCode:"PC-U61", key:true, status:"pkg",
-      s580:{ text:"해당 PDF 구성표에 기재 없음", state:"none" }, s680:{ text:"MANUFAKTUR 가죽 패키지", code:"PC-U61", state:"std" },
-      items:["MANUFAKTUR 나파 가죽 루프 라이너, 블랙 (SA-71U)","뒷좌석 쉘프 MANUFAKTUR 레터링 (SA-C51)","센터 콘솔 MANUFAKTUR 레터링 (SA-C50)"], description:"" },
-    { id:"protection", category:"security", label:"360° 프로텍션 플러스", optionCode:"PC-P82", status:"pkg",
-      s580:{ text:"해당 PDF 구성표에 기재 없음", state:"none" }, s680:{ text:"360° 프로텍션 플러스", code:"PC-P82", state:"std" },
-      items:["도난 방지 경보 시스템 (SA-551)","인테리어 모니터링 시스템 (SA-882)","트렁크 잠금 강화 장치 (SA-884)"], description:"" }
+  const MAYBACH_OPTION_MODELS = [ { id:"s580", label:"S 580" }, { id:"s680", label:"S 680" } ];
+  /* 두 구성표에 동일하게 기재된 묶음 (각 모델 데이터에 각각 포함) */
+  const MO_DIGITAL_LIGHT = { title:"디지털 라이트 프로젝션 기능", items:["디지털 라이트","심벌 프로젝션 기능","애니메이션 프로젝션 기능"] };
+  const MO_TIRES = { title:"타이어", items:["썸머 타이어","저소음 타이어","타이어핏"] };
+  const MO_EXTERIOR_COMMON = [ MO_DIGITAL_LIGHT, "Maybach 로고 프로젝션", "일루미네이티드 그릴", "어댑티브 상향등 어시스트 플러스", "IR 라미네이티드 글래스",
+    "파노라믹 선루프", "매직 비젼 컨트롤", "크롬 핸들 및 트렁크 실", "대용량 연료 탱크", MO_TIRES ];
+  const MO_REAR_COMFORT = { title:"뒷좌석 컴포트 패키지", items:["뒷좌석 MBUX 리모트 컨트롤","뒷좌석 USB 포트","뒷좌석 무선 충전 시스템","뒷좌석 벨트 피더","뒷좌석 사이드백","뒷좌석 에어백",
+    "뒷좌석 열선 및 통풍 시트","뒷좌석 자동 온도 조절 시스템","디자이너 벨트 버클","선 프로텍션 패키지 (더블 선블라인드 · 뒷유리 전동 선블라인드 · 뒷좌석 사이드 윈도우 전동 선블라인드)",
+    "쇼퍼 패키지 (앞좌석 럭셔리 헤드레스트 · 앞좌석 쇼퍼 포지션)","이그제큐티브 시트"] };
+  const MO_REAR_COMFORT_PLUS = { title:"뒷좌석 컴포트 패키지 플러스", items:["뒷좌석 마사지 패키지 (뒷좌석 다리 마사지 · 뒷좌석 멀티컨투어 시트 · 뒷좌석 목, 어깨 히팅)","벨트백","어댑티브 뒷좌석 라이트"] };
+  const MO_INTERIOR_COMMON = [ "MANUFAKTUR 백레스트 트림", { title:"익스클루시브 패키지", items:["익스클루시브 트림 패키지"] }, "이그제큐티브 시트", "앞좌석 액티브 멀티컨투어 시트",
+    "발광 도어 실 패널 \"MAYBACH\" 레터링", "럭셔리 플로어 매트", MO_REAR_COMFORT, MO_REAR_COMFORT_PLUS ];
+  const MO_SAFETY_COMMON = [
+    { title:"MB.DRIVE 스탠다드", items:["교통 표지판 어시스트","디스턴스 어시스트 디스트로닉","리버싱 카메라","브레이크 어시스트","비상 정지 기능","사각지대 어시스트","사각지대 어시스트 플러스","속도 제한 경고","차량 조작 어시스트","차선 이탈 방지","충돌 회피 조향 기능","하차 시 경고"] },
+    { title:"MB.DRIVE 어시스트", items:["경로 기반 속도 조절","스티어링 어시스트","액티브 속도 제한 어시스트","재 출발 시간 연장","차선 변경 어시스트"] },
+    { title:"MB.DRIVE 주차 어시스트 360", items:["360° 카메라","PARKTRONIC","주차 어시스트","후진 매뉴버링 기능","휠 프로텍션 경고"] },
+    { title:"PRE-SAFE 및 탑승자 보호", items:["PRE-SAFE® 임펄스","PRE-SAFE® 임펄스 사이드","뒷좌석 에어백","뒷좌석 사이드백","센터 에어백","벨트백","동반석 에어백 자동 해제 장치","액티브 보닛","타이어 공기압 경보 장치 (TPMS)","탑승자 유무 알림","뒷좌석 안전벨트 상태 표시","eCall"] }
   ];
-  /* 두 구성표 모두 '기본 가격에 포함됨'에 기재된 대표 공통 사양 */
-  const MAYBACH_OPTION_COMMON = [
-    "DIGITAL LIGHT 프로젝션 기능 (PC-PAX)", "3D 계기반 (SA-451)", "IR 라미네이티드 글래스 (SA-596)", "MBUX 증강현실 헤드업 디스플레이 (SA-445)",
-    "뒷좌석 마사지 패키지 (PC-P43)", "뒷좌석 다리 마사지 (SA-323)", "Burmester 3D 서라운드 사운드 시스템 (SA-810)",
-    "MBUX 하이엔드 뒷좌석 엔터테인먼트 시스템 (SA-854)", "액티브 앰비언트 라이트 (SA-878)", "MB.DRIVE 어시스트 (PC-P20)"
+  const MO_CONVENIENCE_COMMON = [
+    { title:"시트 및 마사지", items:["앞좌석 열선 및 통풍 시트","앞좌석 시트 히팅 플러스","뒷좌석 열선 및 통풍 시트","뒷좌석 시트 히팅 플러스","뒷좌석 마사지 패키지","뒷좌석 다리 마사지","뒷좌석 멀티컨투어 시트","뒷좌석 목, 어깨 히팅","앞좌석 메모리 패키지 (사이드 및 룸 미러 눈부심 방지 · 운전석 메모리 기능)","뒷좌석 메모리 기능","메모리 기능이 포함된 뒷좌석 전동 시트"] },
+    { title:"뒷좌석 편의", items:["뒷좌석 MBUX 리모트 컨트롤","뒷좌석 USB 포트","뒷좌석 무선 충전 시스템","뒷좌석 벨트 피더","뒷좌석 자동 온도 조절 시스템","더블 선블라인드","뒷유리 전동 선블라인드","뒷좌석 사이드 윈도우 전동 선블라인드","쇼퍼 패키지 (앞좌석 럭셔리 헤드레스트 · 앞좌석 쇼퍼 포지션)","어댑티브 뒷좌석 라이트","뒷좌석 컴포트 도어","스루-로딩 기능"] },
+    { title:"실내 환경", items:["공기 청정 패키지","에어 밸런스 패키지","액티브 앰비언트 라이트","앰비언트 라이트","에너자이징 컴포트","열선 패키지 플러스 (뒷좌석 암레스트 히팅 · 앞좌석 암레스트 히팅 · 앞좌석 열선 벨트 · 열선 스티어링 휠)","자동 온도 조절 시스템"] },
+    { title:"멀티미디어 및 사운드", items:["MBUX 슈퍼스크린","센트럴 디스플레이","MBUX 멀티미디어 시스템","MBUX 내비게이션","MBUX 증강 현실 내비게이션","MBUX 실시간 교통 정보","MBUX 증강현실 헤드업 디스플레이","3D 계기반","조수석 디스플레이 프라이버시 기능","MBUX 엔터테인먼트","MBUX 확장 기능","MBUX 하이엔드 뒷좌석 엔터테인먼트 시스템","부메스터 3D 서라운드 사운드 시스템","사운드 개인화","무선 헤드셋 (2개)","애플 카플레이","안드로이드 오토","스마트폰 연동","커뮤니케이션 모듈 (5G)","스탠다드 디지털 서비스","프리-인스톨레이션 디지털 라디오","MBUX 대쉬캠"] },
+    { title:"스마트 편의", items:["스마트폰 디지털키","앞좌석 듀얼 무선 충전 시스템","USB 패키지 플러스","12V 소켓","전동 트렁크","트렁크 패키지","핸즈 프리 액세스","플러시 도어 핸들 키레스 고","파워 클로징","톨 정산 시스템","차량 키, 화이트/로즈 골드 크롬"] }
   ];
-  const MAYBACH_OPTION_STATE = { std:"기본 포함", alt:"다른 기본 구성", none:"구성표에 기재 없음", check:"추가 확인 필요" };
-  var maybachOptionFilter = "all";
+  const MAYBACH_STANDARD_EQUIPMENT = {
+    s580:{
+      powertrain:[ "V8 가솔린 엔진", "배기량 3,982cc", "9단 자동변속기", "E-액티브 바디 컨트롤", "EQ 부스트", "통합 스타터 제너레이터", "리어 액슬 스티어링 (10°)" ],
+      exterior:[ "20인치 MAYBACH 5홀 단조 휠" ].concat(MO_EXTERIOR_COMMON),
+      interior:[ "마이바흐 익스클루시브 나파 레더", "MANUFAKTUR 플로잉 라인 피아노 라커 트림, 블랙", "다기능 스티어링 휠, 나파 가죽", "마이크로컷 루프 라이너, 블랙" ].concat(MO_INTERIOR_COMMON),
+      safety:MO_SAFETY_COMMON.slice(),
+      convenience:MO_CONVENIENCE_COMMON.slice()
+    },
+    s680:{
+      powertrain:[ "V12 가솔린 엔진", "배기량 5,980cc", "9단 자동변속기", "에어매틱", "리어 액슬 스티어링" ],
+      exterior:[ "21인치 마이바흐 멀티 스포크 단조 휠" ].concat(MO_EXTERIOR_COMMON),
+      interior:[ "마이바흐 익스클루시브 나파 레더", "MANUFAKTUR 브라운 오픈 포어 월넛 우드와 알루미늄 라인의 트림", "다기능 스티어링 휠, 우드/가죽",
+        { title:"MANUFAKTUR 가죽 패키지", items:["MANUFAKTUR 나파 가죽 루프 라이너, 블랙","뒷좌석 쉘프 MANUFAKTUR 레터링","센터 콘솔 MANUFAKTUR 레터링"] } ].concat(MO_INTERIOR_COMMON),
+      safety:MO_SAFETY_COMMON.concat([ { title:"도난 방지 및 보호 기능", items:["360° 프로텍션 플러스 (도난 방지 경보 시스템 · 인테리어 모니터링 시스템 · 트렁크 잠금 강화 장치)"] } ]),
+      convenience:MO_CONVENIENCE_COMMON.slice()
+    }
+  };
+  var moModelSel = "s580", moCatSel = "powertrain";
   function moEsc(t){ return String(t).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
-  function moWon(n){ return Number(n).toLocaleString('ko-KR') + '원'; }
-  function moCell(c){
-    var none = c.state === 'none';
-    return '<p class="mo-val' + (none ? ' is-none' : '') + '">' + (none ? '&mdash;' : moEsc(c.text)) + (c.code ? '<span class="mo-code">(' + moEsc(c.code) + ')</span>' : '') + '</p>' +
-      '<span class="mo-st ' + c.state + '">' + MAYBACH_OPTION_STATE[c.state] + '</span>' +
-      (c.note ? '<span class="mo-cnote">' + moEsc(c.note) + '</span>' : '');
+  function moCount(list){ return list.reduce(function(n, x){ return n + (typeof x === 'string' ? 1 : x.items.length); }, 0); }
+  /* 그룹(패키지) — 기본 상태는 닫힘 · [+] 버튼으로 펼침 */
+  function moGroup(g, i){
+    var id = 'moG-' + moModelSel + '-' + moCatSel + '-' + i;
+    return '<li class="mo-group"><button type="button" class="mo-gbtn" aria-expanded="false" aria-controls="' + id + '">' +
+      '<span>' + moEsc(g.title) + '<span class="mo-gcount">' + g.items.length + '개</span></span><span class="mo-gicon" aria-hidden="true"></span></button>' +
+      '<div class="mo-gbody" id="' + id + '" hidden><ul class="mo-items">' + g.items.map(function(x){ return '<li>' + moEsc(x) + '</li>'; }).join('') + '</ul></div></li>';
   }
-  function moPkg(r, where){
-    if (!r.items) return '';
-    var pid = 'moPkg-' + where + '-' + r.id;
-    return '<button type="button" class="mo-pkg-btn" aria-expanded="false" aria-controls="' + pid + '">패키지 구성 보기 +</button>' +
-      '<ul class="mo-pkg" id="' + pid + '" hidden>' + r.items.map(function(x){ return '<li>' + moEsc(x) + '</li>'; }).join('') + '</ul>';
+  function renderMaybachStandardOptions(){
+    var list = (MAYBACH_STANDARD_EQUIPMENT[moModelSel] || {})[moCatSel] || [];
+    var cat = MAYBACH_OPTION_CATEGORIES.find(function(c){ return c.id === moCatSel; });
+    var model = MAYBACH_OPTION_MODELS.find(function(m){ return m.id === moModelSel; });
+    var singles = list.filter(function(x){ return typeof x === 'string'; });
+    var groups = list.filter(function(x){ return typeof x !== 'string'; });
+    document.getElementById('moList').innerHTML =
+      '<div class="mo-list-h"><span class="mo-list-t">' + model.label + ' &middot; ' + cat.label + '</span><span class="mo-list-c">기본 적용 사양 ' + moCount(list) + '개</span></div>' +
+      (singles.length ? '<ul class="mo-items">' + singles.map(function(x){ return '<li>' + moEsc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      (groups.length ? '<ul class="mo-groups"' + (singles.length ? ' style="border-top:1px solid var(--line)"' : '') + '>' + groups.map(moGroup).join('') + '</ul>' : '');
   }
-  function renderMaybachOptionTable(){
-    var P = MAYBACH_MODEL_BASE_PRICES, gap = P.s680 - P.s580;
-    document.getElementById('moPrices').innerHTML =
-      '<div class="mo-price"><span class="mo-price-model">S 580</span><p class="mo-price-val">' + moWon(P.s580) + '</p><p class="mo-price-txt">V8 엔진과 E-액티브 바디 컨트롤을 갖춘 럭셔리 세단.</p></div>' +
-      '<div class="mo-gap"><span class="mo-gap-k">기준가격 차이</span><span class="mo-gap-v">' + (gap / 10000).toLocaleString('ko-KR') + '만 원</span><span class="mo-gap-sub">' + moWon(gap) + ' &middot; VAT 포함 &middot; OTR 제외</span></div>' +
-      '<div class="mo-price"><span class="mo-price-model">S 680</span><p class="mo-price-val">' + moWon(P.s680) + '</p><p class="mo-price-txt">V12 엔진과 MANUFAKTUR 가죽 패키지, 특별한 실내 마감 및 디자인을 갖춘 플래그십 모델.</p></div>';
-    document.getElementById('moFilters').innerHTML = MAYBACH_OPTION_CATEGORIES.map(function(c){
-      return '<button type="button" class="mo-filter" data-cat="' + c.id + '" aria-pressed="' + (c.id === maybachOptionFilter ? 'true' : 'false') + '">' + c.label + '</button>';
-    }).join('');
-    document.getElementById('moTable').innerHTML =
-      '<div class="mo-row is-head" role="row"><div role="columnheader">구분</div><div role="columnheader">S 580</div><div role="columnheader">S 680</div></div>' +
-      MAYBACH_OPTION_COMPARE.map(function(r){
-        return '<div class="mo-row' + (r.key ? ' is-key' : '') + '" role="row" data-cat="' + r.category + '">' +
-          '<div role="rowheader"><p class="mo-label">' + moEsc(r.label) + '</p>' + (r.description ? '<p class="mo-ldesc">' + moEsc(r.description) + '</p>' : '') + '</div>' +
-          '<div role="cell">' + moCell(r.s580) + (r.s580.state !== 'none' ? moPkg(r, 't580') : '') + '</div>' +
-          '<div role="cell">' + moCell(r.s680) + (r.s680.state !== 'none' ? moPkg(r, 't680') : '') + '</div></div>';
-      }).join('');
-    document.getElementById('moCards').innerHTML = MAYBACH_OPTION_COMPARE.map(function(r){
-      return '<div class="mo-card' + (r.key ? ' is-key' : '') + '" data-cat="' + r.category + '">' +
-        '<p class="mo-label">' + moEsc(r.label) + '</p>' + (r.description ? '<p class="mo-ldesc">' + moEsc(r.description) + '</p>' : '') +
-        '<div class="mo-card-m"><span class="mo-card-k">S 580</span><div>' + moCell(r.s580) + (r.s580.state !== 'none' ? moPkg(r, 'c580') : '') + '</div></div>' +
-        '<div class="mo-card-m"><span class="mo-card-k">S 680</span><div>' + moCell(r.s680) + (r.s680.state !== 'none' ? moPkg(r, 'c680') : '') + '</div></div></div>';
-    }).join('');
-    document.getElementById('moCommon').innerHTML = '<p class="mo-common-h">S 580 &middot; S 680 공통 기본 사양 (대표 항목)</p><ul>' +
-      MAYBACH_OPTION_COMMON.map(function(x){ return '<li>' + moEsc(x) + '</li>'; }).join('') + '</ul>';
-    filterMaybachOptions(maybachOptionFilter);
+  function selectMaybachOptionModel(id){
+    if (!MAYBACH_STANDARD_EQUIPMENT[id]) return;
+    moModelSel = id;
+    document.querySelectorAll('#moModels .mo-model').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-model') === id ? 'true' : 'false'); });
+    renderMaybachStandardOptions();
   }
-  function filterMaybachOptions(cat){
-    maybachOptionFilter = cat;
-    document.querySelectorAll('#moFilters .mo-filter').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-cat') === cat ? 'true' : 'false'); });
-    document.querySelectorAll('#moTable .mo-row[data-cat], #moCards .mo-card').forEach(function(el){ el.hidden = !(cat === 'all' || el.getAttribute('data-cat') === cat); });
+  function filterMaybachStandardCategory(id){
+    moCatSel = id;
+    document.querySelectorAll('#moCats .mo-cat').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-cat') === id ? 'true' : 'false'); });
+    renderMaybachStandardOptions();
+  }
+  function toggleMaybachOptionGroup(btn){
+    var open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.getElementById(btn.getAttribute('aria-controls')).hidden = !open;
   }
   (function initMaybachOptions(){
     var root = document.getElementById('maybachOptions'); if (!root) return;
-    renderMaybachOptionTable();
+    document.getElementById('moModels').innerHTML = MAYBACH_OPTION_MODELS.map(function(m){
+      return '<button type="button" class="mo-model" data-model="' + m.id + '" aria-pressed="' + (m.id === moModelSel ? 'true' : 'false') + '">' + m.label + '</button>'; }).join('');
+    document.getElementById('moCats').innerHTML = MAYBACH_OPTION_CATEGORIES.map(function(c){
+      return '<button type="button" class="mo-cat" data-cat="' + c.id + '" aria-pressed="' + (c.id === moCatSel ? 'true' : 'false') + '">' + c.label + '</button>'; }).join('');
+    renderMaybachStandardOptions();
     root.addEventListener('click', function(e){
-      var f = e.target.closest('.mo-filter');
-      if (f){ e.preventDefault(); filterMaybachOptions(f.getAttribute('data-cat')); return; }
-      var pb = e.target.closest('.mo-pkg-btn');
-      if (pb){
-        e.preventDefault();
-        var open = pb.getAttribute('aria-expanded') !== 'true', list = document.getElementById(pb.getAttribute('aria-controls'));
-        pb.setAttribute('aria-expanded', open ? 'true' : 'false'); list.hidden = !open;
-        pb.textContent = open ? '패키지 구성 접기 −' : '패키지 구성 보기 +';
-        return;
-      }
-      var cb = e.target.closest('#moCommonBtn');
-      if (cb){
-        e.preventDefault();
-        var o = cb.getAttribute('aria-expanded') !== 'true';
-        cb.setAttribute('aria-expanded', o ? 'true' : 'false'); document.getElementById('moCommon').hidden = !o;
-        cb.innerHTML = o ? '두 모델의 공통 기본사양 접기 <span aria-hidden="true">−</span>' : '두 모델의 공통 기본사양 보기 <span aria-hidden="true">+</span>';
-      }
+      var m = e.target.closest('.mo-model'); if (m){ e.preventDefault(); selectMaybachOptionModel(m.getAttribute('data-model')); return; }
+      var c = e.target.closest('.mo-cat'); if (c){ e.preventDefault(); filterMaybachStandardCategory(c.getAttribute('data-cat')); return; }
+      var g = e.target.closest('.mo-gbtn'); if (g){ e.preventDefault(); toggleMaybachOptionGroup(g); }
     });
     root.addEventListener('keydown', function(e){
-      var f = e.target.closest('.mo-filter'); if (!f || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft')) return;
-      var list = [].slice.call(root.querySelectorAll('.mo-filter'));
-      var n = list[(list.indexOf(f) + (e.key === 'ArrowRight' ? 1 : list.length - 1)) % list.length];
+      var b = e.target.closest('.mo-model, .mo-cat'); if (!b || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft')) return;
+      var list = [].slice.call(b.parentNode.querySelectorAll('button'));
+      var n = list[(list.indexOf(b) + (e.key === 'ArrowRight' ? 1 : list.length - 1)) % list.length];
       n.focus(); n.click(); e.preventDefault();
     });
-    /* S 580 MANUFAKTUR 선택 시 안내만 표시 (모델 상태는 변경하지 않음) */
-    var mf = document.getElementById('moMfNote');
-    var syncMf = function(id){ mf.hidden = id !== 's580Manufaktur'; };
-    syncMf(maybachSelectedModel);
-    document.addEventListener('maybach:modelchange', function(e){ syncMf(e.detail && e.detail.id); });
   })();
 
   renderRearSeatComparison();
