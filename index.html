@@ -1794,8 +1794,9 @@ const IMAGE_URLS = {
   wellnessSound4D: "https://github.com/JNOHJINGYU/images/blob/main/maybach_s_wellness_burmester_sound.png?raw=true",
   // 실내 공기청정
   wellnessAirPurification: "https://github.com/JNOHJINGYU/images/blob/main/maybach_s_wellness_air_purification.png?raw=true",
-  // 뒷좌석 미디어 및 디지털 엔터테인먼트
-  wellnessMedia: "",
+  // 미디어 — 앞좌석 MBUX 슈퍼스크린 / 뒷좌석 모니터
+  wellnessMedia: "https://github.com/JNOHJINGYU/images/blob/main/maybach_s_wellness_media_front_superscreen.jpg?raw=true",
+  wellnessMediaRear: "https://github.com/JNOHJINGYU/images/blob/main/maybach_s_wellness_media_rear_monitor.jpg?raw=true",
 
   // TECHNOLOGY 05 — MBUX 슈퍼스크린 대시보드 이미지
   technologySuperscreen: "https://github.com/JNOHJINGYU/images/blob/main/26C0064_014.jpg?raw=true", /* (보관용) Technology 슈퍼스크린 탭 삭제 — MB.OS 탭으로 교체 */
@@ -2101,8 +2102,9 @@ const VIDEO_URLS = {
               { id:"4d", sound:"4d", label:"Burmester High-End 4D 사운드", sub:"+1,125만원", en:"HIGH-END 4D", imageKey:"wellnessSound4D" } ] },
     { id:"air", label:"공기청정", en:"AIR PURIFICATION", title:"쾌적한 실내 공기를 위한 기술",
       description:"실내 공기 관리 기능을 통해 탑승자가 보다 쾌적한 환경에서 이동할 수 있도록 돕습니다.", imageKey:"wellnessAirPurification" },
-    { id:"media", label:"미디어", en:"REAR ENTERTAINMENT", title:"뒷좌석에서도 즐기는 디지털 엔터테인먼트",
-      description:"지원되는 멀티미디어 기능을 통해 차량 안에서도 영상과 다양한 디지털 콘텐츠를 편리하게 이용할 수 있습니다.", imageKey:"wellnessMedia" }
+    { id:"media", label:"미디어", en:"MBUX ENTERTAINMENT", title:"앞좌석과 뒷좌석 모두에서 즐기는 디지털 엔터테인먼트",
+      description:"지원되는 멀티미디어 기능을 통해 차량 안에서도 영상과 다양한 디지털 콘텐츠를 편리하게 이용할 수 있습니다.", imageKey:"wellnessMedia",
+      views:[ { id:"front", label:"앞좌석", en:"FRONT · MBUX SUPERSCREEN", imageKey:"wellnessMedia" }, { id:"rear", label:"뒷좌석", en:"REAR · MONITOR", imageKey:"wellnessMediaRear" } ] }
   ];
   /* ---------- Burmester 사운드 3D(기본) / 4D(유료 옵션) — 편의사양 사운드 탭 데이터
      국내 판매 조건(사용자 제공): 3D 기본 사양, High-End 4D 유료 선택 옵션 1,125만원
